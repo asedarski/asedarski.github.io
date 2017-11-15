@@ -16,7 +16,7 @@ html, body {
     float: right;
 }
 
-h3, p {
+h3, h4, p {
     text-align: center;
 }
 
@@ -74,8 +74,16 @@ h3, p {
     font-size: 35px;
 }
 
+.text-section h4 {
+    font-size: 25px;
+}
+
 .text-section p {
     font-size: 20px;
+}
+
+.text-section div.caption2 {
+    padding: 0 0 1%;
 }
 
 .text-section2 h3 {
