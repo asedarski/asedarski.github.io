@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    font-family: 'Kalam', serif;
+}
+
+h1, h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5% 0 1%;
+    font-size: 5em;
+    color: #00808e;
+}
+
+h2 {
+    padding: 1% 0;
+    font-size: 2em;
+}
+
+.block1 {
+    background-image: url('assets/snowy-mountain.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.block2 {
+    background-image: url('assets/laptop-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.block3 {
+    background-image: url('assets/water-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
