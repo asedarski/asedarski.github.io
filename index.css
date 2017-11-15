@@ -4,16 +4,41 @@ html, body {
     margin: 0;
 }
 
-.parallax1 {
-    background-image: url('assets/snowy-mountain.jpeg');
-    height: 100%;
+.full-container {
+    width: 100%;
+}
+
+.lfloat {
+    float: left;
+}
+
+.rfloat {
+    float: right;
+}
+
+h3, p {
+    text-align: center;
+}
+
+.parallax1, .parallax2 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.caption {
+.parallax1 {
+    height: 100%;
+    background-image: url('assets/snowy-mountain.jpeg');
+    min-height: 100%;
+}
+
+.parallax2 {
+    background-image: url('assets/laptop-background.jpeg');
+    min-height: 665px;;
+}
+
+.caption, .caption2 {
     position: absolute;
     left: 0;
     top: 50%;
@@ -22,7 +47,13 @@ html, body {
     color: #000;
 }
 
-.caption span.border {
+.caption2 {
+    position: relative;
+    display: inline-block;
+    padding: 5% 0 1%;
+}
+
+.caption span.border, .caption2 span.border {
     background-color: #111;
     color: #00808e;
     padding: 18px 8px 18px 18px;
@@ -31,7 +62,7 @@ html, body {
     line-height: 75px;
 }
 
-.text-section {
+.text-section, .text-section2 {
     color: #777;
     background-color: white;
     text-align: center;
@@ -39,6 +70,65 @@ html, body {
     text-align: justify;
 }
 
-h3, p {
-    text-align: center;
+.text-section h3 {
+    font-size: 35px;
+}
+
+.text-section p {
+    font-size: 20px;
+}
+
+.text-section2 h3 {
+    font-size: 25px;
+    color: #00808e;
+}
+
+.skills {
+    padding-top: 20px;
+    width: 50%;
+    min-width: 420px;
+}
+
+.skill {
+    color: white;
+    background-color: #111;
+    letter-spacing: 5px;
+    font-size: 20px;
+    line-height: 50px;
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill span {
+    padding: 0 10px;
+}
+
+.skill span i.fa {
+    font-size: 20px;
+    color: #00808e;
+}
+
+
+.skill span i.fa.gray {
+    color: lightgray;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .parallax2 {
+        min-height: 900px;
+    }
+    .skills {
+        width: 100%;
+        float: none;
+    }
 }
