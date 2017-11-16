@@ -22,3 +22,26 @@ function callbackFunc() {
 
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
+
+$(function () {
+    $.ajax({
+        url: 'https://www.codeschool.com/users/asedarski.json',
+        dataType: 'jsonp',
+        success: function (data) {
+            populatePageWithCourses(data.courses.completed, '.completed');
+            populatePageWithCourses(data.courses.in_progress, '.inProgress');
+
+        }
+    });
+});
+
+function populatePageWithCourses(courses, selector) {
+    var section = $(selector);
+    var tag = '';
+    courses.forEach(function(course) {
+        tag = '<a href="' + course.url + '" target="_blank">'
+            + '<img src="' + course.badge + '" title="' + course.title + '">'
+            + '</a>';
+        section.append(tag);
+    });
+}
