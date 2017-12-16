@@ -50,3 +50,8 @@
     letter-spacing: 10px;
     line-height: 75px;
 }
+
+.social-links {
+    display: inline-block;
+    margin: 20px;
+}
