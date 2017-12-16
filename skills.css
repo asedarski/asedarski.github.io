@@ -1,0 +1,31 @@
+.skills {
+    padding-top: 20px;
+    width: 50%;
+    min-width: 420px;
+}
+
+.skill {
+    color: lightgray;
+    background-color: #111;
+    letter-spacing: 5px;
+    font-size: 20px;
+    line-height: 50px;
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill span {
+    padding: 0 10px;
+}
+
+.skill span i.fa {
+    font-size: 20px;
+    color: #00808e;
+}
+
+.skill span i.fa.gray {
+    color: lightgray;
+}

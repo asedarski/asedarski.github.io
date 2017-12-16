@@ -1,0 +1,87 @@
+time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.timeline ul {
+    padding: 0;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #111;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    transform: translateX(-48%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #444;
+    transition: background 1s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: #111;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #111;
+    color: lightgray;
+    transition: all 1s ease-in-out;
+}
+
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(45px, 0, 0);
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #111 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-469px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #111;
+}
+
+.timeline ul li div h4 {
+    text-align: left;
+}

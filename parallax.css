@@ -1,0 +1,31 @@
+div[class^='parallax'], div[class*='parallax'] {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parallax1 {
+    height: 100%;
+    background-image: url('assets/snowy-mountain.jpeg');
+    min-height: 100%;
+}
+
+.parallax2 {
+    background-image: url('assets/laptop-background.jpeg');
+    min-height: 665px;
+}
+
+.parallax3 {
+    background-image: url('assets/dog-bridge-background.jpeg');
+    min-height: 1050px;
+}
+
+.parallax4 {
+    background-image: url('assets/book-coffee-background.jpeg');
+}
+
+.parallax5 {
+    background-image: url('assets/distressed-wood.jpeg');
+}

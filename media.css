@@ -1,0 +1,44 @@
+/* MEDIA QUERIES */
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .timeline ul li div {
+        width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 150px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .parallax2 {
+        min-height: 900px;
+    }
+    .skills {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: 300px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 515px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #111 transparent transparent;
+    }
+}

@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.full-container {
+    width: 100%;
+}
+
+.lfloat {
+    float: left;
+}
+
+.rfloat {
+    float: right;
+}
+
+h3, h4, p {
+    text-align: center;
+}
+
+a {
+    color: #777;
+}
+
+i.fa.large {
+    font-size: 2em;
+}
