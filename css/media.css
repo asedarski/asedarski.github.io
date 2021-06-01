@@ -26,19 +26,30 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-device-width: 680px) {
     .timeline ul li {
         margin-left: 20px;
     }
-    .timeline ul li div {
-        width: 300px;
+    .timeline ul li#experience-tile div {
+      width: 500px;
     }
     .timeline ul li:nth-child(even) div {
         left: 515px;
     }
-    .timeline ul li:nth-child(even) div::before {
-        left: -15px;
-        border-width: 8px 16px 8px 0;
-        border-color: transparent #111 transparent transparent;
+
+    .timeline ul li#experience-tile::after {
+      background: none;
     }
+
+    .timeline ul li#experience-tile.in-view::after {
+      background: none;
+    }
+
+    .timeline ul li#experience-tile:nth-child(even) div {
+      transform: translate3d(-770px, 0, 0);
+  }
+
+  .timeline ul li#experience-tile:nth-child(odd) div {
+      transform: translate3d(-253px, 0, 0);
+  }
 }
