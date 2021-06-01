@@ -1,31 +1,34 @@
-.skills {
-    padding-top: 20px;
-    width: 50%;
-    min-width: 420px;
+.skill-header {
+  color: #00808e;
+  background-color: #111;
+  letter-spacing: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 10px 15px 10px 20px;
+  margin: 10px;
 }
 
-.skill {
-    color: lightgray;
-    background-color: #111;
-    letter-spacing: 5px;
-    font-size: 20px;
-    line-height: 50px;
-    width: 400px;
-    height: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.skill-item {
+  color: lightgray;
+  background-color: #111;
+  letter-spacing: 5px;
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 5px 10px 5px 15px;
+  margin: 10px;
 }
 
-.skill span {
-    padding: 0 10px;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
 }
-
-.skill span i.fa {
-    font-size: 20px;
-    color: #00808e;
-}
-
-.skill span i.fa.gray {
-    color: lightgray;
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }

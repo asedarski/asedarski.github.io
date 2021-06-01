@@ -27,3 +27,7 @@ a {
 i.fa.large {
     font-size: 2em;
 }
+
+span {
+  border-radius: 10px;
+}
